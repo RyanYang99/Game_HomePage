@@ -10,8 +10,8 @@ function MainPage() {
         Download Now
       </a>
       <div className="social-links">
-        <a href="#">GitHub</a>
-        <a href="#">Discord</a>
+        <a href="https://github.com/RyanYang99/2025S_Project">GitHub</a>
+        <a href="https://discord.gg/mpwq4xjf">Discord</a>
       </div>
     </main>
   );

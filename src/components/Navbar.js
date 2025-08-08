@@ -7,7 +7,6 @@ function Navbar() {
     <header className="navbar">
       <Link to="/">
         {" "}
-        {/* 로고 클릭 시 메인 페이지로 이동 */}
         <div className="logo">TERRACRAFT</div>
       </Link>
       <nav>
