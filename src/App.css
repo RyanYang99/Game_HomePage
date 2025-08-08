@@ -156,8 +156,11 @@ body {
 }
 
 .page-title {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: #e6e6e6;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 40px #00ff00;
 }
 
 .description {
@@ -170,4 +173,56 @@ body {
   color: #00ffcc;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.developer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* 카드 사이의 간격 */
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+.developer-card {
+  background-color: rgba(20, 20, 20, 0.7);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 255, 204, 0.2);
+}
+
+.developer-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* 이미지를 원형으로 */
+  object-fit: cover; /* 이미지가 찌그러지지 않게 */
+  border: 3px solid #575757;
+  margin-bottom: 0.5rem;
+}
+
+.developer-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.developer-role {
+  font-size: 1.1rem;
+  color: #5ac97b; /* 역할에 포인트 색상 적용 */
+  font-weight: normal;
+}
+
+.developer-description {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: #ccc;
+  line-height: 1.5;
 }

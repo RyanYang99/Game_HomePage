@@ -7,9 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import MainPage from "./pages/MainPage";
 import IntroPage from "./pages/IntroPage";
-// 아직 만들지 않은 페이지는 나중에 추가할 수 있습니다.
-// import DevelopersPage from './pages/DevelopersPage';
-// import NewsPage from './pages/NewsPage';
+import DevelopersPage from "./pages/DevelopersPage"; // <-- 이 줄을 추가하세요.
 
 function App() {
   return (
@@ -17,15 +15,15 @@ function App() {
       className="container"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <Navbar /> {/* 모든 페이지에 Navbar 표시 */}
+      <Navbar />
       <Routes>
-        {/* 경로 설정 */}
         <Route path="/" element={<MainPage />} />
         <Route path="/intro" element={<IntroPage />} />
-        {/* <Route path="/developers" element={<DevelopersPage />} /> */}
+        {/* 아래 Route를 추가하여 DevelopersPage를 연결합니다. */}
+        <Route path="/developers" element={<DevelopersPage />} />
         {/* <Route path="/news" element={<NewsPage />} /> */}
       </Routes>
-      <Footer /> {/* 모든 페이지에 Footer 표시 */}
+      <Footer />
     </div>
   );
 }
