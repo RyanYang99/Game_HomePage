@@ -1,5 +1,15 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import backgroundImage from "./Assets/Terraria.jpg";
+
+// 컴포넌트와 페이지들 불러오기
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import MainPage from "./pages/MainPage";
+import IntroPage from "./pages/IntroPage";
+// 아직 만들지 않은 페이지는 나중에 추가할 수 있습니다.
+// import DevelopersPage from './pages/DevelopersPage';
+// import NewsPage from './pages/NewsPage';
 
 function App() {
   return (
@@ -7,44 +17,15 @@ function App() {
       className="container"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* 네비게이션 바 */}
-      <header className="navbar">
-        <div className="logo">TERRACRAFT</div>
-        <nav>
-          <ul className="nav-links">
-            <li>
-              <a href="#">게임설명</a>
-            </li>
-            <li>
-              <a href="#">제작진</a>
-            </li>
-            <li>
-              <a href="#">소식</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="#" className="nav-button">
-          Download
-        </a>
-      </header>
-
-      {/* 메인 히어로 섹션 */}
-      <main className="hero-section">
-        <h1 className="game-title">TERRACRAFT</h1>
-        <p className="tagline">제작하고, 전투하고, 생존하라.</p>
-        <a href="#" className="hero-button">
-          Download Now
-        </a>
-        <div className="social-links">
-          <a href="#">GitHub</a>
-          <a href="#">Discord</a>
-        </div>
-      </main>
-
-      {/* 푸터 */}
-      <footer className="footer">
-        <p>&copy; 2025 CodeBlack Developers. All Rights Reserved.</p>
-      </footer>
+      <Navbar /> {/* 모든 페이지에 Navbar 표시 */}
+      <Routes>
+        {/* 경로 설정 */}
+        <Route path="/" element={<MainPage />} />
+        <Route path="/intro" element={<IntroPage />} />
+        {/* <Route path="/developers" element={<DevelopersPage />} /> */}
+        {/* <Route path="/news" element={<NewsPage />} /> */}
+      </Routes>
+      <Footer /> {/* 모든 페이지에 Footer 표시 */}
     </div>
   );
 }
