@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 스크롤 시 배경 고정 */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem 3rem;
+  background-color: rgba(10, 10, 10, 0.8); /* 반투명 배경 */
+  border-bottom: 1px solid #333;
+  backdrop-filter: blur(5px); /* 배경 블러 효과 */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5ac97b; /* 네온 민트 색상 */
+  text-shadow: 0 0 5px #5ac97b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 55px;
+}
+
+.nav-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #5ac97b;
+}
+
+.nav-button {
+  background-color: #5ac97b;
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 64, 0.4);
+}
+
+/* 히어로 섹션 (메인) */
+.hero-section {
+  flex-grow: 1; /* 남은 공간을 모두 차지 */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* 배경 이미지 위에 어두운 오버레이 추가 */
 }
 
-.App-link {
-  color: #61dafb;
+.game-title {
+  font-size: 7rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 40px #c8ff00;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.hero-button {
+  background-color: #5ac97b;
+  color: #111;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 255, 64, 0.4);
+}
+
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #5ac97b;
+}
+
+/* 푸터 */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(10, 10, 10, 0.8);
+  font-size: 0.9rem;
+  color: #888;
 }
