@@ -14,37 +14,42 @@ const developers = [
   {
     name: "승준",
     role: "Project Manager",
-    description: "전체적인 프로젝트 관리 및 기획을 담당",
+    description:
+      "플레이어 추적 알고리즘,\n보스 몬스터 스테이지,\n전투 시스템,\n프로젝트 관리",
     imgSrc: seungjunImg,
   },
   {
     name: "윤성",
     role: "Player System",
-    description: "플레이어 캐릭터 구조체 및 상태 관리를 구현",
+    description:
+      "플레이어 물리 엔진 및 이동 시스템,\n상태 기반의 애니메이션 시스템,\n도구 장착 및 사용(스윙) 메커니즘",
     imgSrc: yunseongImg,
   },
   {
     name: "성준",
     role: "Inventory & Item System",
-    description: "인벤토리 UI 및 아이템 관리 시스템을 개발",
+    description:
+      "아이템DB시스템,\n아이템DB 기반의 인벤토리 시스템,\n게임의 전반적인 음향 시스템",
     imgSrc: seongjunImg,
   },
   {
     name: "현수",
     role: "Map Generation & Rendering",
-    description: "랜덤 맵 생성 알고리즘과 렌더링을 구현",
+    description:
+      "콘솔 기반 렌더링,\n윈도우 API를 이용한 인풋,\n맵 생성,\n코드 정리",
     imgSrc: hyunsooImg,
   },
   {
     name: "종호",
     role: "Monster & Combat System",
-    description: "몬스터 AI 및 다양한 행동 패턴을 구현",
+    description: "몹 생성 시스템,\n몹 물리 엔진 적용",
     imgSrc: jonghoImg,
   },
   {
     name: "예준",
     role: "Crafting System & Block Manipulation",
-    description: "제작대 UI 및 레시피 시스템을 개발",
+    description:
+      "블록 파괴 및 설치 시스템,\n도구 및 아이템 추가,\n제작 시스템,\nUI 최적화",
     imgSrc: yejoonImg,
   },
 ];
