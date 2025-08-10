@@ -22,8 +22,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      {/* 다운로드 버튼은 외부 링크나 파일 다운로드이므로 a 태그를 유지해도 좋습니다. */}
-      <a href="/game/Terracraft.exe" download className="nav-button">
+      <a href="game\TerraCraft_Install.zip" download className="nav-button">
         Download
       </a>
     </header>
