@@ -22,7 +22,11 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <a href="game\TerraCraft_Install.zip" download className="nav-button">
+      <a
+        href="https://github.com/RyanYang99/Game_HomePage/releases/download/v1.0/TerraCraft_Install.zip"
+        download
+        className="nav-button"
+      >
         Download
       </a>
     </header>
