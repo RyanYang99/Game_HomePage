@@ -5,8 +5,7 @@ import "../App.css"; // 스타일을 위해 App.css를 가져옵니다.
 function Navbar() {
   return (
     <header className="navbar">
-      <Link to="/">
-        {" "}
+      <Link to="/" style={{ textDecoration: "none" }}>
         <div className="logo">TERRACRAFT</div>
       </Link>
       <nav>
